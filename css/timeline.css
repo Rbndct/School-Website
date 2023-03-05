@@ -1,0 +1,152 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.main-timeline {
+    font-family: "Poppins", sans-serif;
+}
+.main-timeline:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.main-timeline .timeline {
+    width: calc(50% + 70px);
+    margin: 0 5px 0 0;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+.main-timeline .timeline-content {
+    color: #555;
+    background: #fff;
+    min-height: 130px;
+    padding: 30px 150px 30px 30px;
+    border-top: none;
+    display: block;
+    position: relative;
+}
+.main-timeline .timeline-content:before {
+    content: "";
+    background-color: #0052a2;
+    height: 100%;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.main-timeline .timeline-content:hover {
+    text-decoration: none;
+}
+.main-timeline .timeline-icon {
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 16px;
+}
+.main-timeline .timeline-year {
+    color: #333;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: 60px;
+}
+.main-timeline .title {
+    color: #00c6da;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+.main-timeline .description {
+    font-size: 14px;
+    margin: 0;
+}
+.main-timeline .timeline:nth-child(even) {
+    float: right;
+    margin: 0 0 0 5px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content {
+    padding: 30px 30px 30px 150px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content:before {
+    right: auto;
+    left: 0;
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon {
+    right: auto;
+    left: 10px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-year {
+    right: auto;
+    left: 60px;
+}
+.main-timeline .timeline:nth-child(4n + 2) .timeline-content:before {
+    background-color: #00498d;
+}
+.main-timeline .timeline:nth-child(4n + 2) .title {
+    color: #02386e;
+}
+.main-timeline .timeline:nth-child(4n + 3) .timeline-content:before {
+    background-color: #00264d;
+}
+.main-timeline .timeline:nth-child(4n + 3) .title {
+    color: #00172d;
+}
+.main-timeline .timeline:nth-child(4n + 4) .timeline-content:before {
+    background-color: #000b18;
+}
+.main-timeline .timeline:nth-child(4n + 4) .title {
+    color: #000b18;
+}
+@media screen and (max-width: 767px) {
+    .main-timeline .timeline,
+    .main-timeline .timeline:nth-child(even) {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .main-timeline .timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content {
+        text-align: center;
+        padding: 130px 25px 25px;
+    }
+    .main-timeline .timeline .timeline-content:before,
+    .main-timeline .timeline:nth-child(even) .timeline-content:before {
+        height: 70px;
+        width: 100%;
+    }
+    .main-timeline .timeline-icon,
+    .main-timeline .timeline:nth-child(even) .timeline-icon {
+        -webkit-transform: translateY(0) translateX(-50%);
+        -ms-transform: translateY(0) translateX(-50%);
+        transform: translateY(0) translateX(-50%);
+        top: 16px;
+        left: 50%;
+        right: auto;
+    }
+    .main-timeline .timeline-year,
+    .main-timeline .timeline:nth-child(even) .timeline-year {
+        -webkit-transform: translateY(0) translateX(-50%);
+        -ms-transform: translateY(0) translateX(-50%);
+        transform: translateY(0) translateX(-50%);
+        top: 80px;
+        left: 50%;
+        right: auto;
+    }
+}
