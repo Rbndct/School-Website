@@ -946,7 +946,7 @@ h5,
 }
 
 .news-updates {
-  padding: 5rem 0;
+  padding: 2.5rem 0 0 0;
 }
 .news-updates .section-heading {
   font-size: 30px;
@@ -1187,7 +1187,7 @@ h5,
 }
 .owl-slide-3 .owl-dots .owl-dot.active > span,
 .owl-slide .owl-dots .owl-dot.active > span {
-  background: #18346c;
+  background: black;
 }
 
 .owl-slide .owl-nav {
@@ -2330,3 +2330,6 @@ h5,
 }
 /* IMPORT CODE END */
 
+.logosite-section {
+  padding: 2.5em 0!important;
+}

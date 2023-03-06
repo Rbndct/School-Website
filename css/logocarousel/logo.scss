@@ -1,0 +1,129 @@
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 15s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 960px;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+// @media only screen and (max-width: 600px) {
+//     .slider {
+//         width: 340px;
+//     }
+// }
+
+// @media only screen and (max-width: 600px) {
+//     .slider {
+//         width: 340px;
+//     }
+// }
+
+// @media only screen and (min-width: 600px) {
+//     .slider {
+//         width: 510px;
+//     }
+// }
+
+
+// @media only screen and (min-width: 768px) {
+//     .slider {
+//         width: 690px;
+//     }
+// }
+
+// @media only screen and (min-width: 992px) {
+//     .slider {
+//         width: 820px;
+//     }
+// }
+
+
+  
+  @media (min-width: 321px) and (max-width: 480px) {
+    .slider {
+        width: calc(100% - 100px);
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .slider {
+        width: calc(100% - 100px);
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .slider {
+        width: calc(100% - 100px);
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    .slider {
+        width: calc(100% - 100px);
+    }
+  }
+  
+  @media (min-width: 1201px) and (max-width: 1440px) {
+    .slider {
+        width: calc(100% - 100px);
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 990px) {
+    .slider {
+        width: calc(100% - 100px);
+    }
+  }
+
+  
